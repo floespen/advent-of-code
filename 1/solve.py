@@ -1,4 +1,8 @@
-file = open('data', 'r')
+import os
+dirname = os.path.dirname(__file__)
+filename = os.path.join(dirname, 'data')
+
+file = open(filename, 'r')
 lines = file.readlines()
 
 sumArray = []
